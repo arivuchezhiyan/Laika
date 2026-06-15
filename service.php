@@ -346,14 +346,14 @@ include 'header.php';
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services__detail-content">
-                                        <h3 class="fw-bold mb-3 text-dark">Routine Pet Care & Wellness</h3>
-                                        <p class="mb-20">Keeping your pets healthy involves active prevention and standard routine clinical checkups. Our comprehensive examinations focus on identifying potential health issues before they become serious.</p>
-                                        <h5 class="fw-bold text-dark mb-3">What We Cover:</h5>
+                                        <h3 class="fw-bold mb-3 text-dark">Preventive Pet Care & Wellness</h3>
+                                        <p class="mb-20">Support your pet’s long-term health with proactive wellness care, regular monitoring and preventive guidance designed to promote comfort, vitality and overall well-being at every life stage.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
                                         <ul class="list-wrap service-detail-list">
-                                            <li><i class="fas fa-check-circle"></i> Complete nose-to-tail physical clinical assessment.</li>
-                                            <li><i class="fas fa-check-circle"></i> Professional weight, growth monitoring, and nutritional advising.</li>
-                                            <li><i class="fas fa-check-circle"></i> Comprehensive dental, ocular, and auditory health reviews.</li>
-                                            <li><i class="fas fa-check-circle"></i> Tailored tick, flea, and worm prevention regimes.</li>
+                                            <li><i class="fas fa-check-circle"></i> Wellness assessments and health monitoring</li>
+                                            <li><i class="fas fa-check-circle"></i> Growth and body condition evaluation</li>
+                                            <li><i class="fas fa-check-circle"></i> Preventive care recommendations</li>
+                                            <li><i class="fas fa-check-circle"></i> Personalized guidance for lifelong pet wellness</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -370,14 +370,14 @@ include 'header.php';
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services__detail-content">
-                                        <h3 class="fw-bold mb-3 text-dark">Vaccination & Infectious Disease Treatment</h3>
-                                        <p class="mb-20">Timely immunizations protect pets from fatal viruses (like Parvo and Distemper). We customize immunization schedules depending on your pet's age and lifestyle, and treat standard infections with extreme care.</p>
-                                        <h5 class="fw-bold text-dark mb-3">Key Offerings:</h5>
+                                        <h3 class="fw-bold mb-3 text-dark">Protection Through Vaccination & Care</h3>
+                                        <p class="mb-20">Protect your pet from preventable illnesses with timely vaccinations and professional medical care designed to support immunity, recovery and long-term health.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
                                         <ul class="list-wrap service-detail-list">
-                                            <li><i class="fas fa-check-circle"></i> Essential puppy/kitten core vaccine packages.</li>
-                                            <li><i class="fas fa-check-circle"></i> Anti-Rabies, DHPPi, and feline leukemia prevention.</li>
-                                            <li><i class="fas fa-check-circle"></i> Advanced isolation facilities and treatments for Parvo recovery.</li>
-                                            <li><i class="fas fa-check-circle"></i> Immediate critical care for sudden toxicities and infections.</li>
+                                            <li><i class="fas fa-check-circle"></i> Core and lifestyle-based vaccinations</li>
+                                            <li><i class="fas fa-check-circle"></i> Preventive healthcare programs</li>
+                                            <li><i class="fas fa-check-circle"></i> Medical consultations and treatments</li>
+                                            <li><i class="fas fa-check-circle"></i> Follow-up care and recovery support</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -394,14 +394,14 @@ include 'header.php';
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services__detail-content">
-                                        <h3 class="fw-bold mb-3 text-dark">Sterile Veterinary Surgical Suites</h3>
-                                        <p class="mb-20">Our hospital features sterile surgical theatres fitted with advanced anesthesia monitoring, autoclaves, and surgical tools. We carry out critical and minor procedures with utmost attention to safety.</p>
-                                        <h5 class="fw-bold text-dark mb-3">Common Procedures:</h5>
+                                        <h3 class="fw-bold mb-3 text-dark">Advanced Surgical Care & Recovery</h3>
+                                        <p class="mb-20">Our surgical services focus on safety, precision and comfort, ensuring pets receive professional care before, during and after every procedure.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
                                         <ul class="list-wrap service-detail-list">
-                                            <li><i class="fas fa-check-circle"></i> Safe and swift spay & neuter keyhole surgeries.</li>
-                                            <li><i class="fas fa-check-circle"></i> Advanced orthopedic treatments and fracture repairs.</li>
-                                            <li><i class="fas fa-check-circle"></i> Soft-tissue surgical removals, cystotomies, and suturing.</li>
-                                            <li><i class="fas fa-check-circle"></i> Specialized dental scaling and oral surgical care.</li>
+                                            <li><i class="fas fa-check-circle"></i> Routine surgical procedures</li>
+                                            <li><i class="fas fa-check-circle"></i> Soft tissue surgeries</li>
+                                            <li><i class="fas fa-check-circle"></i> Pre-surgical evaluations</li>
+                                            <li><i class="fas fa-check-circle"></i> Post-operative monitoring and care</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -418,14 +418,14 @@ include 'header.php';
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services__detail-content">
-                                        <h3 class="fw-bold mb-3 text-dark">In-House Pathology Laboratory</h3>
-                                        <p class="mb-20">Accurate testing is key to proper diagnosis. Our on-site pathology laboratory ensures blood counts, organ function screens, and antigen assessments are processed quickly to start proper therapies.</p>
-                                        <h5 class="fw-bold text-dark mb-3">Diagnostic Scope:</h5>
+                                        <h3 class="fw-bold mb-3 text-dark">Accurate Diagnostics & Health Insights</h3>
+                                        <p class="mb-20">Accurate diagnostics help identify health concerns early, allowing timely treatment decisions and better outcomes for your pet's overall well-being.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
                                         <ul class="list-wrap service-detail-list">
-                                            <li><i class="fas fa-check-circle"></i> Complete Blood Count (CBC) & biochemistry testing.</li>
-                                            <li><i class="fas fa-check-circle"></i> Skin scraping testing for demodicosis, mites, and yeast.</li>
-                                            <li><i class="fas fa-check-circle"></i> Liver profile, kidney function, and diabetic testing.</li>
-                                            <li><i class="fas fa-check-circle"></i> Rapid antigen tests for Parvovirus, Tick fever, and Distemper.</li>
+                                            <li><i class="fas fa-check-circle"></i> Laboratory testing services</li>
+                                            <li><i class="fas fa-check-circle"></i> Blood and urine analysis</li>
+                                            <li><i class="fas fa-check-circle"></i> Health screening support</li>
+                                            <li><i class="fas fa-check-circle"></i> Early disease detection</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -442,14 +442,14 @@ include 'header.php';
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services__detail-content">
-                                        <h3 class="fw-bold mb-3 text-dark">High-Definition Digital X-ray & Ultrasonography</h3>
-                                        <p class="mb-20">For imaging internal organs, detecting swallowed foreign bodies, or checking bone structural health, we operate advanced low-radiation digital radiography and high-frequency ultrasound scanners.</p>
-                                        <h5 class="fw-bold text-dark mb-3">Imaging Capabilities:</h5>
+                                        <h3 class="fw-bold mb-3 text-dark">Advanced Imaging & Diagnostic Support</h3>
+                                        <p class="mb-20">Advanced imaging services provide detailed insights into your pet’s internal health, supporting accurate diagnosis and effective treatment planning.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
                                         <ul class="list-wrap service-detail-list">
-                                            <li><i class="fas fa-check-circle"></i> Digital bone and joint radiography (X-ray) for fractures.</li>
-                                            <li><i class="fas fa-check-circle"></i> Abdominal ultrasound scans for pregnancy & organ review.</li>
-                                            <li><i class="fas fa-check-circle"></i> Quick assessment of cardiac structures and soft tissues.</li>
-                                            <li><i class="fas fa-check-circle"></i> Contrast imaging and localized scan examinations.</li>
+                                            <li><i class="fas fa-check-circle"></i> Digital X-ray imaging</li>
+                                            <li><i class="fas fa-check-circle"></i> Ultrasound examinations</li>
+                                            <li><i class="fas fa-check-circle"></i> Internal health assessments</li>
+                                            <li><i class="fas fa-check-circle"></i> Diagnostic imaging support</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -466,14 +466,14 @@ include 'header.php';
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services__detail-content">
-                                        <h3 class="fw-bold mb-3 text-dark">Premium Pet Grooming & Spa Treatments</h3>
-                                        <p class="mb-20">Grooming is vital to protect against ticks, fleas, skin allergies, and painful matted hair. Our groomers manage pets with patience, using therapeutic shampoos and styling techniques.</p>
-                                        <h5 class="fw-bold text-dark mb-3">Spa Packages:</h5>
+                                        <h3 class="fw-bold mb-3 text-dark">Professional Grooming & Hygiene Care</h3>
+                                        <p class="mb-20">Professional grooming services help maintain hygiene, comfort and appearance while supporting healthy skin, coat condition and overall wellness.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
                                         <ul class="list-wrap service-detail-list">
-                                            <li><i class="fas fa-check-circle"></i> Herbal baths, anti-tick rinses, and deep conditioning.</li>
-                                            <li><i class="fas fa-check-circle"></i> Breed-standard hair clipping, deshedding, and styling.</li>
-                                            <li><i class="fas fa-check-circle"></i> Safe nail clipping, paw trimming, and paw pad treatments.</li>
-                                            <li><i class="fas fa-check-circle"></i> Professional ear cleaning, eye staining treatment, and blow dry.</li>
+                                            <li><i class="fas fa-check-circle"></i> Bathing and coat care</li>
+                                            <li><i class="fas fa-check-circle"></i> Nail trimming services</li>
+                                            <li><i class="fas fa-check-circle"></i> Ear and hygiene cleaning</li>
+                                            <li><i class="fas fa-check-circle"></i> Routine grooming maintenance</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -490,14 +490,14 @@ include 'header.php';
                             <div class="row align-items-center">
                                 <div class="col-lg-6">
                                     <div class="services__detail-content">
-                                        <h3 class="fw-bold mb-3 text-dark">Premium Food & Pet Accessories</h3>
-                                        <p class="mb-20">Our retail sector carries doctor-prescribed diets, vitamins, joint protective supplements, strong chew toys, comfortable harness kits, and everything needed for daily pet care.</p>
-                                        <h5 class="fw-bold text-dark mb-3">Retail Range:</h5>
+                                        <h3 class="fw-bold mb-3 text-dark">Quality Essentials for Everyday Pet Care</h3>
+                                        <p class="mb-20">Find quality pet essentials carefully selected to support nutrition, comfort, enrichment and everyday care for pets of all ages.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
                                         <ul class="list-wrap service-detail-list">
-                                            <li><i class="fas fa-check-circle"></i> Royal Canin, Farmina, and prescription recovery foods.</li>
-                                            <li><i class="fas fa-check-circle"></i> Bone and joint strength supplements, calcium & multivitamins.</li>
-                                            <li><i class="fas fa-check-circle"></i> Durable training harnesses, premium leashes, and toys.</li>
-                                            <li><i class="fas fa-check-circle"></i> Herbal shampoos, deodorizers, and cat litter accessories.</li>
+                                            <li><i class="fas fa-check-circle"></i> Premium pet foods</li>
+                                            <li><i class="fas fa-check-circle"></i> Treats and supplements</li>
+                                            <li><i class="fas fa-check-circle"></i> Toys and accessories</li>
+                                            <li><i class="fas fa-check-circle"></i> Daily care essentials</li>
                                         </ul>
                                     </div>
                                 </div>
