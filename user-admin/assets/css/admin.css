@@ -1,0 +1,438 @@
+/* Admin Panel Main CSS - Theme Synchronized */
+@import url('https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    /* Main Site Theme Colors for Laika Pet Clinic */
+    --primary-color: #ed1f31; /* Logo Red */
+    --primary-dark: #c51323;
+    --secondary-color: #3b53a4; /* Logo Blue */
+    --secondary-dark: #2d4080;
+
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #fca311;
+    --danger-color: #e63946;
+
+    --bg-color: #f8f9fa;
+    --sidebar-bg: #ffffff;
+    --sidebar-width: 260px;
+    --header-height: 70px;
+
+    --text-main: #2b2d42;
+    --text-light: #8d99ae;
+
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --radius-md: 16px;
+    --radius-sm: 8px;
+
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --input-bg: #fdfdfd;
+    --border-color: #e9ecef;
+
+    /* Fonts from Main Site */
+    --body-font: "Zalando Sans SemiExpanded", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #1a1c2d;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--primary-dark);
+}
+
+/* Sidebar */
+.sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--sidebar-bg);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.02);
+    z-index: 1000;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.sidebar-header {
+    height: var(--header-height);
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-brand {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    letter-spacing: -0.5px;
+}
+
+.sidebar-menu {
+    padding: 25px 0;
+    flex: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px;
+    color: var(--text-light);
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    transition: var(--transition);
+    margin: 0 10px;
+}
+
+.sidebar-section-header {
+    padding: 20px 25px 10px 35px;
+    /* Aligned with nav-link text roughly, slightly indented or not? Let's match nav-link padding of 25px but add top margin via padding */
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #adb5bd;
+    letter-spacing: 0.5px;
+}
+
+.nav-link i {
+    margin-right: 14px;
+    width: 22px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    background: rgba(196, 33, 33, 0.08);
+    /* Primary color low opacity */
+}
+
+.nav-link.active {
+    color: var(--primary-color);
+    background: rgba(196, 33, 33, 0.12);
+    font-weight: 600;
+}
+
+.sidebar-footer {
+    padding: 20px 25px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* User Avatar Gradient matching main site feel */
+.user-avatar {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.9rem;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(237, 31, 49, 0.3);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Header */
+.main-header {
+    height: var(--header-height);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.02);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: var(--sidebar-width);
+    /* Anchored to sidebar right edge */
+    width: calc(100% - var(--sidebar-width));
+    /* Fill remaining space explicitly */
+    z-index: 900;
+    transition: var(--transition);
+}
+
+/* Content Area */
+.main-content {
+    margin-left: var(--sidebar-width);
+    margin-top: var(--header-height);
+    padding: 35px;
+    min-height: calc(100vh - var(--header-height));
+    transition: var(--transition);
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--card-shadow);
+    border: none;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 18px 25px;
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.admin-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.admin-page-title {
+    margin-bottom: 0;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.admin-page-subtitle {
+    margin: 6px 0 0;
+    color: var(--text-light);
+}
+
+.admin-stat-card {
+    height: 100%;
+    border-radius: var(--radius-md);
+}
+
+.admin-stat-card .card-body {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.admin-stat-icon {
+    width: 64px;
+    height: 64px;
+    flex: 0 0 64px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.admin-stat-copy {
+    min-width: 0;
+}
+
+.admin-stat-label {
+    margin: 0 0 4px;
+    color: var(--text-light);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.admin-stat-value {
+    margin: 0;
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--text-main);
+}
+
+.admin-toolbar-form .form-label {
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.admin-table td,
+.admin-table th {
+    vertical-align: middle;
+}
+
+.admin-table .message-preview {
+    max-width: 320px;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.bg-soft-primary {
+    background-color: rgba(196, 33, 33, 0.12);
+}
+
+.bg-soft-secondary {
+    background-color: rgba(0, 33, 71, 0.12);
+}
+
+.bg-soft-info {
+    background-color: rgba(23, 162, 184, 0.12);
+}
+
+.bg-soft-success {
+    background-color: rgba(40, 167, 69, 0.12);
+}
+
+.bg-soft-warning {
+    background-color: rgba(252, 163, 17, 0.14);
+}
+
+.bg-soft-danger {
+    background-color: rgba(230, 57, 70, 0.12);
+}
+
+.hover-up {
+    transition: all 0.3s ease;
+}
+
+.hover-up:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(237, 31, 49, 0.25);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(237, 31, 49, 0.35);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: blue;
+}
+
+/* Form Controls */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(196, 33, 33, 0.1);
+    background: #fff;
+}
+
+/* Badges */
+.badge-success {
+    background-color: rgba(76, 201, 240, 0.15);
+    color: #0077b6;
+}
+
+.badge-warning {
+    background-color: rgba(252, 163, 17, 0.15);
+    color: #e85d04;
+}
+
+.badge-danger {
+    background-color: rgba(230, 57, 70, 0.15);
+    color: #c1121f;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 991.98px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .main-header {
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .admin-page-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .toggle-sidebar {
+        display: block !important;
+    }
+}
+
+.toggle-sidebar {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--text-main);
+    cursor: pointer;
+    padding: 0;
+    margin-right: 15px;
+}
