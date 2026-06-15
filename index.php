@@ -45,7 +45,7 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-8">
                         <div class="about__img" data-aos="fade-right" data-aos-delay="200">
-                            <img loading="lazy" src="assets/img/images/about_img.png" alt="" style="border-radius: 10% !important;">
+                            <img loading="lazy" src="assets/img/images/home_1.jpeg" alt="" style="border-radius: 10% !important;">
                             <!-- <div class="video__box">
                                 <div class="video__box-shape">
                                     <img loading="lazy" src="assets/img/images/about_video_shape.svg" alt="" class="injectable">
