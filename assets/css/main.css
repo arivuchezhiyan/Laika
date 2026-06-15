@@ -1004,7 +1004,7 @@ textarea {
 ===========================*/
 .breadcrumb__area {
   background-color: #F6F5F7;
-  background-image: url('../img/banner/banner.png');
+  background-image: url('../img/banner/banner_mobile.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1017,6 +1017,7 @@ textarea {
 
 @media (min-width: 768px) {
   .breadcrumb__area {
+    background-image: url('../img/banner/banner.png');
     aspect-ratio: 1983 / 399;
   }
 }

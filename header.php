@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/default.css">
-    <link rel="stylesheet" href="assets/css/main.css?v=1.2">
+    <link rel="stylesheet" href="assets/css/main.css?v=1.3">
 </head>
 
 <body>
