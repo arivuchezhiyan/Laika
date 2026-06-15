@@ -47,12 +47,12 @@ include 'header.php';
                 <div class="col-xl-7 col-lg-6">
                     <div class="about__content" data-aos="fade-left" data-aos-delay="300">
                         <div class="section__title mb-20">
-                            <span class="sub-title">Learn About Us
+                            <span class="sub-title">Committed to Better Health for Every Pet
                                 <strong class="shake">
                                     <img loading="lazy" src="assets/img/icon/pet_icon02.svg" alt="" class="injectable">
                                 </strong>
                             </span>
-                            <h2 class="title">Our Passion Is Caring for <br> Your Pets’ Health</h2>
+                            <h2 class="title">Delivering Trusted Veterinary Excellence Since Day One</h2>
                         </div>
                         <div class="about__content-inner">
                             <div class="experience__box">
@@ -64,10 +64,9 @@ include 'header.php';
                                     <p>Experience</p>
                                 </div>
                             </div>
-                            <p>We provide compassionate, expert veterinary care for pets at every life stage.</p>
+                            <p>For over 25 years, Laika Pet Care has been a trusted destination for pet families across Vellore and Katpadi. Our clinic combines experienced veterinarians, dedicated support staff and a welcoming environment to ensure every pet receives attentive, personalized care tailored to their unique needs.</p>
                         </div>
-                        <p>Our experienced veterinarians in Katpadi create personalized care plans, including preventive health, vaccinations, diagnostics and emergency support, ensuring your pets stay happy and healthy.</p>
-                        <p>Established with the vision of offering high-quality treatment and grooming facilities under one roof, Laika Pet Care has become Vellore's leading name in professional pet care. We operate with state-of-the-art diagnostics, sterile surgical suites, and a dedicated team of vet technicians ready to assist in parvo recovery, routine vaccinations, surgeries, and specialized pet wellness.</p>
+                        <p>With modern facilities and a complete range of pet care solutions under one roof, we focus on delivering reliable healthcare, expert guidance and lasting support. Our goal is to help pets enjoy healthier, happier lives while giving pet owners confidence and peace of mind.</p>
                         <div class="shape">
                             <img loading="lazy" src="assets/img/images/about_shape02.png" alt="img" data-aos="fade-down-left" data-aos-delay="400">
                         </div>
@@ -88,12 +87,12 @@ include 'header.php';
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section__title text-center mb-50" data-aos="fade-up">
-                        <span class="sub-title">Our Foundations
+                        <span class="sub-title">What Defines Us
                             <strong class="shake">
                                 <img loading="lazy" src="assets/img/icon/pet_icon02.svg" alt="" class="injectable">
                             </strong>
                         </span>
-                        <h2 class="title">Mission, Vision & Core Values</h2>
+                        <h2 class="title">Mission, Vision & Values</h2>
                     </div>
                 </div>
             </div>
@@ -104,7 +103,7 @@ include 'header.php';
                             <i class="flaticon-pet-care" style="font-size: 50px; color: #ed1f31;"></i>
                         </div>
                         <h4 class="title mb-3 fw-bold">Our Mission</h4>
-                        <p class="mb-0 text-muted">To deliver compassionate, comprehensive, and advanced veterinary medical services. We prioritize your pet's comfort and well-being, assuring parents they are receiving medical care of the highest standard.</p>
+                        <p class="mb-0 text-muted">To provide trusted veterinary care through compassion, expertise and personalized attention, helping pets live healthier lives while supporting pet families with confidence and care.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
@@ -113,7 +112,7 @@ include 'header.php';
                             <i class="flaticon-paw" style="font-size: 50px; color: #ed1f31;"></i>
                         </div>
                         <h4 class="title mb-3 fw-bold">Our Vision</h4>
-                        <p class="mb-0 text-muted">To lead the veterinary wellness space as Vellore's ultimate single-stop destination for pet diagnostic, surgical, grooming, and retail needs, cultivating healthier communities where pets thrive.</p>
+                        <p class="mb-0 text-muted">To be the most trusted pet healthcare destination, offering comprehensive veterinary solutions that promote lifelong wellness, comfort and happiness for every pet.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
@@ -122,7 +121,7 @@ include 'header.php';
                             <i class="flaticon-vet" style="font-size: 50px; color: #ed1f31;"></i>
                         </div>
                         <h4 class="title mb-3 fw-bold">Core Values</h4>
-                        <p class="mb-0 text-muted">Uncompromising empathy for animals, scientific excellence, absolute transparency with pet parents, and an unwavering commitment to safety, hygiene, and ethical veterinary practice.</p>
+                        <p class="mb-0 text-muted">Compassion, integrity, excellence and respect guide everything we do. We are committed to safe practices, honest communication and exceptional care for every pet.</p>
                     </div>
                 </div>
             </div>
@@ -154,14 +153,14 @@ include 'header.php';
                 <div class="col-lg-6">
                     <div class="why__we-are-content" data-aos="fade-left" data-aos-delay="300">
                         <div class="section__title mb-10">
-                            <span class="sub-title">Why We are The Best
+                            <span class="sub-title">WHY PET OWNERS CHOOSE US
                                 <strong class="shake">
                                     <img loading="lazy" src="assets/img/icon/pet_icon02.svg" alt="" class="injectable">
                                 </strong>
                             </span>
-                            <h2 class="title">Pet Emergencies <br> Made Simple</h2>
+                            <h2 class="title">Complete Care, <br> Trusted by Pet Families</h2>
                         </div>
-                        <p>We understand that your pet is a cherished family member. Our team provides timely, compassionate care to handle emergencies and ensure your furry friends stay safe and healthy.</p>
+                        <p>At Laika Pet Care, we combine experience, modern facilities and a pet-friendly approach to deliver reliable healthcare solutions. Our focus is on providing quality care, clear guidance and a comfortable experience for both pets and their owners.</p>
                         <div class="why__list-box">
                             <ul class="list-wrap">
                                 <li>
@@ -170,9 +169,9 @@ include 'header.php';
                                             <div class="icon">
                                                 <img loading="lazy" src="assets/img/icon/check_icon.svg" alt="" class="injectable">
                                             </div>
-                                            <h4 class="title">Vet Experts</h4>
+                                            <h4 class="title">Experienced Team</h4>
                                         </div>
-                                        <p>Skilled care for all pet emergencies.</p>
+                                        <p>Dedicated veterinarians and support staff committed to your pet's well-being.</p>
                                     </div>
                                 </li>
                                 <li>
@@ -181,9 +180,9 @@ include 'header.php';
                                             <div class="icon">
                                                 <img loading="lazy" src="assets/img/icon/check_icon.svg" alt="" class="injectable">
                                             </div>
-                                            <h4 class="title">Affordable Care</h4>
+                                            <h4 class="title">Modern Facilities</h4>
                                         </div>
-                                        <p>Quality treatment with transparent pricing.</p>
+                                        <p>Advanced equipment and comfortable spaces for quality veterinary care.</p>
                                     </div>
                                 </li>
                                 <li>
@@ -192,9 +191,9 @@ include 'header.php';
                                             <div class="icon">
                                                 <img loading="lazy" src="assets/img/icon/check_icon.svg" alt="" class="injectable">
                                             </div>
-                                            <h4 class="title">Pet Training Tips</h4>
+                                            <h4 class="title">Personalized Attention</h4>
                                         </div>
-                                        <p>Guidance to keep pets happy & well-behaved.</p>
+                                        <p>Individual care plans tailored to your pet's needs and lifestyle.</p>
                                     </div>
                                 </li>
                                 <li>
@@ -203,9 +202,9 @@ include 'header.php';
                                             <div class="icon">
                                                 <img loading="lazy" src="assets/img/icon/check_icon.svg" alt="" class="injectable">
                                             </div>
-                                            <h4 class="title">Daily Health Support</h4>
+                                            <h4 class="title">Complete Pet Care</h4>
                                         </div>
-                                        <p>Routines and tips for ongoing wellness.</p>
+                                        <p>Healthcare, grooming, diagnostics and essentials under one roof.</p>
                                     </div>
                                 </li>
                             </ul>
@@ -223,12 +222,12 @@ include 'header.php';
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section__title text-center mb-40" data-aos="fade-up" data-aos-delay="200">
-                        <span class="sub-title">WE CHANGE YOUR LIFE & WORLD
+                        <span class="sub-title">THE FACES BEHIND THE CARE
                             <strong class="shake">
                                 <img loading="lazy" src="assets/img/icon/pet_icon02.svg" alt="" class="injectable">
                             </strong>
                         </span>
-                        <h2 class="title">Meet Our Expertise <br> Pet Doctors</h2>
+                        <h2 class="title">MEET OUR <br> Dedicated Professionals</h2>
                     </div>
                 </div>
             </div>
