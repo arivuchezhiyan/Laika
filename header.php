@@ -23,7 +23,7 @@
     <link rel="canonical" href="<?php echo htmlspecialchars($canonical_url); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.jpeg">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -132,6 +132,9 @@
                                                 <li><a href="service#xray">X-ray & Ultra Scan</a></li>
                                                 <li><a href="service#spa">Pet Spa(Grooming)</a></li>
                                                 <li><a href="service#shop">Pet Shop</a></li>
+                                                <li><a href="service#dentistry">Pet Dentistry (Dental Scaling)</a></li>
+                                                <li><a href="service#inpatients">Pet Inpatients</a></li>
+                                                <li><a href="service#daycare">Pet Day Care</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="blog">Blogs</a></li>

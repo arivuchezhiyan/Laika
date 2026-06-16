@@ -1,4 +1,31 @@
-<?php include 'header.php'; ?>
+<?php
+// Fetch latest blog posts dynamically from the database
+$home_posts = [];
+$db_connected = false;
+if (file_exists('user-admin/secure/db_connect.php')) {
+    // Suppress warnings in case db_connect.php prints output or fails
+    ob_start();
+    include_once 'user-admin/secure/db_connect.php';
+    include_once 'user-admin/secure/blog_helpers.php';
+    ob_end_clean();
+    
+    if (isset($conn) && !$conn->connect_error && !isset($db_connection_error)) {
+        $db_connected = true;
+        $posts_res = $conn->query("SELECT p.*, c.category_name, c.category_slug 
+                                   FROM posts p 
+                                   LEFT JOIN category c ON p.category_id = c.category_id 
+                                   WHERE p.post_status = 'published' 
+                                   ORDER BY p.created_at DESC 
+                                   LIMIT 3");
+        if ($posts_res) {
+            while ($row = $posts_res->fetch_assoc()) {
+                $home_posts[] = $row;
+            }
+        }
+    }
+}
+include 'header.php'; 
+?>
 
     <!-- main-area -->
     <main class="fix">
@@ -128,6 +155,9 @@
                     <a href="#">X-ray & Ultra Scan <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                     <a href="#">Pet Spa (Grooming) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                     <a href="#">Pet Shop <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                    <a href="#">Pet Dentistry (Dental Scaling) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                    <a href="#">Pet Inpatients <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                    <a href="#">Pet Day Care <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                 </div>
                 <div class="marquee__box">
                     <a href="#">Pet Care Service <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
@@ -137,6 +167,9 @@
                     <a href="#">X-ray & Ultra Scan <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                     <a href="#">Pet Spa (Grooming) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                     <a href="#">Pet Shop <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                    <a href="#">Pet Dentistry (Dental Scaling) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                    <a href="#">Pet Inpatients <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                    <a href="#">Pet Day Care <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                 </div>
             </div>
         </div>
@@ -321,6 +354,75 @@
                                 <h4 class="title"><a href="service#shop">Pet Shop</a></h4>
                                 <p>High-quality food, toys and essential products for daily care.</p>
                                 <a href="service#shop" class="btn border-btn">See Details <img loading="lazy" src="assets/img/icon/right_arrow02.svg" alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8" data-aos="fade-up" data-aos-delay="500">
+                        <div class="services__item">
+                            <div class="services__shape">
+                                <div class="shape-one">
+                                    <img loading="lazy" src="assets/img/images/services_shape01.svg" alt="" class="injectable">
+                                </div>
+                                <div class="shape-two">
+                                    <img loading="lazy" src="assets/img/images/services_shape02.svg" alt="" class="injectable">
+                                </div>
+                            </div>
+                            <div class="services__icon">
+                                <i class="flaticon-vet"></i>
+                                <div class="services__icon-shape">
+                                    <img loading="lazy" src="assets/img/images/services_icon_shape.svg" alt="" class="injectable">
+                                </div>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title"><a href="service#dentistry">Pet Dentistry (Dental Scaling)</a></h4>
+                                <p>Professional dental cleaning and scaling to keep your pet's teeth healthy.</p>
+                                <a href="service#dentistry" class="btn border-btn">See Details <img loading="lazy" src="assets/img/icon/right_arrow02.svg" alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8" data-aos="fade-up" data-aos-delay="200">
+                        <div class="services__item">
+                            <div class="services__shape">
+                                <div class="shape-one">
+                                    <img loading="lazy" src="assets/img/images/services_shape01.svg" alt="" class="injectable">
+                                </div>
+                                <div class="shape-two">
+                                    <img loading="lazy" src="assets/img/images/services_shape02.svg" alt="" class="injectable">
+                                </div>
+                            </div>
+                            <div class="services__icon">
+                                <i class="flaticon-animals"></i>
+                                <div class="services__icon-shape">
+                                    <img loading="lazy" src="assets/img/images/services_icon_shape.svg" alt="" class="injectable">
+                                </div>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title"><a href="service#inpatients">Pet Inpatients</a></h4>
+                                <p>24/7 supportive hospitalization and dedicated nursing care for recovering pets.</p>
+                                <a href="service#inpatients" class="btn border-btn">See Details <img loading="lazy" src="assets/img/icon/right_arrow02.svg" alt="" class="injectable"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8" data-aos="fade-up" data-aos-delay="300">
+                        <div class="services__item">
+                            <div class="services__shape">
+                                <div class="shape-one">
+                                    <img loading="lazy" src="assets/img/images/services_shape01.svg" alt="" class="injectable">
+                                </div>
+                                <div class="shape-two">
+                                    <img loading="lazy" src="assets/img/images/services_shape02.svg" alt="" class="injectable">
+                                </div>
+                            </div>
+                            <div class="services__icon">
+                                <i class="flaticon-dog"></i>
+                                <div class="services__icon-shape">
+                                    <img loading="lazy" src="assets/img/images/services_icon_shape.svg" alt="" class="injectable">
+                                </div>
+                            </div>
+                            <div class="services__content">
+                                <h4 class="title"><a href="service#daycare">Pet Day Care</a></h4>
+                                <p>Safe, fun, and attentive daytime supervision and activities for your pets.</p>
+                                <a href="service#daycare" class="btn border-btn">See Details <img loading="lazy" src="assets/img/icon/right_arrow02.svg" alt="" class="injectable"></a>
                             </div>
                         </div>
                     </div>
@@ -832,79 +934,126 @@ The hospital has all the required facilities/infrastructure for any type of pet 
                     </div>
                 </div>
                 <div class="row justify-content-center mobile-carousel">
-                    <div class="col-lg-4 col-md-6 col-sm-8 mobile-carousel-item" data-aos="fade-up" data-aos-delay="300">
-                        <div class="blog__post-item shine-animate-item">
-                            <div class="blog__post-thumb">
-                                <div class="blog__post-mask shine-animate">
-                                    <a href="blog-details"><img loading="lazy" src="assets/img/blog/blog_post01.png" alt="img"></a>
-                                    <ul class="list-wrap blog__post-tag">
-                                        <li><a href="blog">Pet</a></li>
-                                        <li><a href="blog">Medical</a></li>
-                                    </ul>
-                                </div>
-                                <div class="shape">
-                                    <img loading="lazy" src="assets/img/blog/blog_img_shape.svg" alt="" class="injectable">
+                    <?php if (!empty($home_posts)): ?>
+                        <?php 
+                        $delay = 300;
+                        foreach ($home_posts as $post): 
+                        ?>
+                            <div class="col-lg-4 col-md-6 col-sm-8 mobile-carousel-item" data-aos="fade-up" data-aos-delay="<?php echo $delay; ?>">
+                                <div class="blog__post-item shine-animate-item">
+                                    <div class="blog__post-thumb">
+                                        <div class="blog__post-mask shine-animate">
+                                            <a href="blog/<?php echo htmlspecialchars($post['post_slug']); ?>">
+                                                <img loading="lazy" src="<?php echo htmlspecialchars(resolve_blog_image_path($post['image_path'])); ?>" alt="<?php echo htmlspecialchars($post['post_title']); ?>">
+                                            </a>
+                                            <?php if (!empty($post['category_name'])): ?>
+                                                <ul class="list-wrap blog__post-tag">
+                                                    <li>
+                                                        <a href="blog?category=<?php echo htmlspecialchars($post['category_slug']); ?>">
+                                                            <?php echo htmlspecialchars($post['category_name']); ?>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            <?php endif; ?>
+                                        </div>
+                                        <div class="shape">
+                                            <img loading="lazy" src="assets/img/blog/blog_img_shape.svg" alt="" class="injectable">
+                                        </div>
+                                    </div>
+                                    <div class="blog__post-content">
+                                        <div class="blog__post-meta">
+                                            <ul class="list-wrap">
+                                                <li><i class="flaticon-user"></i>by <a href="blog/<?php echo htmlspecialchars($post['post_slug']); ?>">Admin</a></li>
+                                                <li><i class="flaticon-calendar"></i><?php echo date('d M, Y', strtotime($post['created_at'])); ?></li>
+                                            </ul>
+                                        </div>
+                                        <h2 class="title">
+                                            <a href="blog/<?php echo htmlspecialchars($post['post_slug']); ?>">
+                                                <?php echo htmlspecialchars($post['post_title']); ?>
+                                            </a>
+                                        </h2>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="blog__post-content">
-                                <div class="blog__post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-user"></i>by <a href="blog-details">admin</a></li>
-                                        <li><i class="flaticon-calendar"></i>25th Mar, 2026</li>
-                                    </ul>
+                        <?php 
+                            $delay += 100;
+                        endforeach; 
+                        ?>
+                    <?php else: ?>
+                        <div class="col-lg-4 col-md-6 col-sm-8 mobile-carousel-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="blog__post-item shine-animate-item">
+                                <div class="blog__post-thumb">
+                                    <div class="blog__post-mask shine-animate">
+                                        <a href="blog"><img loading="lazy" src="assets/img/blog/blog_post01.png" alt="img"></a>
+                                        <ul class="list-wrap blog__post-tag">
+                                            <li><a href="blog">Pet</a></li>
+                                            <li><a href="blog">Medical</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shape">
+                                        <img loading="lazy" src="assets/img/blog/blog_img_shape.svg" alt="" class="injectable">
+                                    </div>
                                 </div>
-                                <h2 class="title"><a href="blog-details">Clean indoor air as important in controlling asthma</a></h2>
+                                <div class="blog__post-content">
+                                    <div class="blog__post-meta">
+                                        <ul class="list-wrap">
+                                            <li><i class="flaticon-user"></i>by <a href="blog">admin</a></li>
+                                            <li><i class="flaticon-calendar"></i>25th Mar, 2026</li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title"><a href="blog">Clean indoor air as important in controlling asthma</a></h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-8 mobile-carousel-item" data-aos="fade-up" data-aos-delay="400">
-                        <div class="blog__post-item shine-animate-item">
-                            <div class="blog__post-thumb">
-                                <div class="blog__post-mask shine-animate">
-                                    <a href="blog-details"><img loading="lazy" src="assets/img/blog/blog_post01.png" alt="img"></a>
-                                    <ul class="list-wrap blog__post-tag">
-                                        <li><a href="blog">Care</a></li>
-                                    </ul>
+                        <div class="col-lg-4 col-md-6 col-sm-8 mobile-carousel-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="blog__post-item shine-animate-item">
+                                <div class="blog__post-thumb">
+                                    <div class="blog__post-mask shine-animate">
+                                        <a href="blog"><img loading="lazy" src="assets/img/blog/blog_post01.png" alt="img"></a>
+                                        <ul class="list-wrap blog__post-tag">
+                                            <li><a href="blog">Care</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shape">
+                                        <img loading="lazy" src="assets/img/blog/blog_img_shape.svg" alt="" class="injectable">
+                                    </div>
                                 </div>
-                                <div class="shape">
-                                    <img loading="lazy" src="assets/img/blog/blog_img_shape.svg" alt="" class="injectable">
+                                <div class="blog__post-content">
+                                    <div class="blog__post-meta">
+                                        <ul class="list-wrap">
+                                            <li><i class="flaticon-user"></i>by <a href="blog">admin</a></li>
+                                            <li><i class="flaticon-calendar"></i>25th Mar, 2026</li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title"><a href="blog">Clean indoor air as important in controlling asthma</a></h2>
                                 </div>
-                            </div>
-                            <div class="blog__post-content">
-                                <div class="blog__post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-user"></i>by <a href="blog-details">admin</a></li>
-                                        <li><i class="flaticon-calendar"></i>25th Mar, 2026</li>
-                                    </ul>
-                                </div>
-                                <h2 class="title"><a href="blog-details">Clean indoor air as important in controlling asthma</a></h2>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-8 mobile-carousel-item" data-aos="fade-up" data-aos-delay="500">
-                        <div class="blog__post-item shine-animate-item">
-                            <div class="blog__post-thumb">
-                                <div class="blog__post-mask shine-animate">
-                                    <a href="blog-details"><img loading="lazy" src="assets/img/blog/blog_post01.png" alt="img"></a>
-                                    <ul class="list-wrap blog__post-tag">
-                                        <li><a href="blog">Pet Care</a></li>
-                                    </ul>
+                        <div class="col-lg-4 col-md-6 col-sm-8 mobile-carousel-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="blog__post-item shine-animate-item">
+                                <div class="blog__post-thumb">
+                                    <div class="blog__post-mask shine-animate">
+                                        <a href="blog"><img loading="lazy" src="assets/img/blog/blog_post01.png" alt="img"></a>
+                                        <ul class="list-wrap blog__post-tag">
+                                            <li><a href="blog">Pet Care</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shape">
+                                        <img loading="lazy" src="assets/img/blog/blog_img_shape.svg" alt="" class="injectable">
+                                    </div>
                                 </div>
-                                <div class="shape">
-                                    <img loading="lazy" src="assets/img/blog/blog_img_shape.svg" alt="" class="injectable">
+                                <div class="blog__post-content">
+                                    <div class="blog__post-meta">
+                                        <ul class="list-wrap">
+                                            <li><i class="flaticon-user"></i>by <a href="blog">admin</a></li>
+                                            <li><i class="flaticon-calendar"></i>25th Mar, 2026</li>
+                                        </ul>
+                                    </div>
+                                    <h2 class="title"><a href="blog">Clean indoor air as important in controlling asthma</a></h2>
                                 </div>
-                            </div>
-                            <div class="blog__post-content">
-                                <div class="blog__post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-user"></i>by <a href="blog-details">admin</a></li>
-                                        <li><i class="flaticon-calendar"></i>25th Mar, 2026</li>
-                                    </ul>
-                                </div>
-                                <h2 class="title"><a href="blog-details">Clean indoor air as important in controlling asthma</a></h2>
                             </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="blog__shape-wrap">

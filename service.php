@@ -9,6 +9,16 @@ include 'header.php';
 
 <!-- main-area -->
 <main class="fix">
+    <style>
+    .breadcrumb__area {
+        background-image: url('assets/img/banner/pet banner.png') !important;
+    }
+    @media (min-width: 768px) {
+        .breadcrumb__area {
+            background-image: url('assets/img/banner/pet banner.png') !important;
+        }
+    }
+    </style>
 
     <!-- breadcrumb-area -->
     <section class="breadcrumb__area">
@@ -226,6 +236,81 @@ include 'header.php';
                         </div>
                     </div>
                 </div>
+
+                <!-- Service 8 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8" data-aos="fade-up" data-aos-delay="500">
+                    <div class="services__item">
+                        <div class="services__shape">
+                            <div class="shape-one">
+                                <img loading="lazy" src="assets/img/images/services_shape01.svg" alt="" class="injectable">
+                            </div>
+                            <div class="shape-two">
+                                <img loading="lazy" src="assets/img/images/services_shape02.svg" alt="" class="injectable">
+                            </div>
+                        </div>
+                        <div class="services__icon">
+                            <i class="flaticon-vet"></i>
+                            <div class="services__icon-shape">
+                                <img loading="lazy" src="assets/img/images/services_icon_shape.svg" alt="" class="injectable">
+                            </div>
+                        </div>
+                        <div class="services__content">
+                            <h4 class="title"><a href="service#dentistry" onclick="activateServiceTab('dentistry')">Pet Dentistry (Dental Scaling)</a></h4>
+                            <p>Professional dental cleaning and scaling to keep your pet's teeth healthy.</p>
+                            <a href="service#dentistry" onclick="activateServiceTab('dentistry')" class="btn border-btn">See Details <img loading="lazy" src="assets/img/icon/right_arrow02.svg" alt="" class="injectable"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="services__item">
+                        <div class="services__shape">
+                            <div class="shape-one">
+                                <img loading="lazy" src="assets/img/images/services_shape01.svg" alt="" class="injectable">
+                            </div>
+                            <div class="shape-two">
+                                <img loading="lazy" src="assets/img/images/services_shape02.svg" alt="" class="injectable">
+                            </div>
+                        </div>
+                        <div class="services__icon">
+                            <i class="flaticon-animals"></i>
+                            <div class="services__icon-shape">
+                                <img loading="lazy" src="assets/img/images/services_icon_shape.svg" alt="" class="injectable">
+                            </div>
+                        </div>
+                        <div class="services__content">
+                            <h4 class="title"><a href="service#inpatients" onclick="activateServiceTab('inpatients')">Pet Inpatients</a></h4>
+                            <p>24/7 supportive hospitalization and dedicated nursing care for recovering pets.</p>
+                            <a href="service#inpatients" onclick="activateServiceTab('inpatients')" class="btn border-btn">See Details <img loading="lazy" src="assets/img/icon/right_arrow02.svg" alt="" class="injectable"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8" data-aos="fade-up" data-aos-delay="300">
+                    <div class="services__item">
+                        <div class="services__shape">
+                            <div class="shape-one">
+                                <img loading="lazy" src="assets/img/images/services_shape01.svg" alt="" class="injectable">
+                            </div>
+                            <div class="shape-two">
+                                <img loading="lazy" src="assets/img/images/services_shape02.svg" alt="" class="injectable">
+                            </div>
+                        </div>
+                        <div class="services__icon">
+                            <i class="flaticon-dog"></i>
+                            <div class="services__icon-shape">
+                                <img loading="lazy" src="assets/img/images/services_icon_shape.svg" alt="" class="injectable">
+                            </div>
+                        </div>
+                        <div class="services__content">
+                            <h4 class="title"><a href="service#daycare" onclick="activateServiceTab('daycare')">Pet Day Care</a></h4>
+                            <p>Safe, fun, and attentive daytime supervision and activities for your pets.</p>
+                            <a href="service#daycare" onclick="activateServiceTab('daycare')" class="btn border-btn">See Details <img loading="lazy" src="assets/img/icon/right_arrow02.svg" alt="" class="injectable"></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="services__shape-wrap">
@@ -247,6 +332,9 @@ include 'header.php';
                 <a href="#">X-ray & Ultra Scan <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                 <a href="#">Pet Spa (Grooming) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                 <a href="#">Pet Shop <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                <a href="#">Pet Dentistry (Dental Scaling) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                <a href="#">Pet Inpatients <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                <a href="#">Pet Day Care <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
             </div>
             <div class="marquee__box">
                 <a href="#">Pet Care Service <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
@@ -256,6 +344,9 @@ include 'header.php';
                 <a href="#">X-ray & Ultra Scan <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                 <a href="#">Pet Spa (Grooming) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
                 <a href="#">Pet Shop <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                <a href="#">Pet Dentistry (Dental Scaling) <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                <a href="#">Pet Inpatients <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
+                <a href="#">Pet Day Care <img loading="lazy" src="assets/img/images/marquee_icon.svg" alt=""></a>
             </div>
         </div>
     </div>
@@ -338,6 +429,9 @@ include 'header.php';
                         <button class="service-tab-btn" onclick="showServiceTab('xray')">X-Ray & Scan</button>
                         <button class="service-tab-btn" onclick="showServiceTab('spa')">Pet Spa & Groom</button>
                         <button class="service-tab-btn" onclick="showServiceTab('shop')">Pet Shop</button>
+                        <button class="service-tab-btn" onclick="showServiceTab('dentistry')">Pet Dentistry</button>
+                        <button class="service-tab-btn" onclick="showServiceTab('inpatients')">Pet Inpatients</button>
+                        <button class="service-tab-btn" onclick="showServiceTab('daycare')">Pet Day Care</button>
                     </div>
 
                     <div class="service-tabs-contents" data-aos="fade-up" data-aos-delay="200">
@@ -504,6 +598,80 @@ include 'header.php';
                                 <div class="col-lg-6">
                                     <div class="services__detail-img text-center">
                                         <img loading="lazy" src="assets/img/images/shop_img.png" alt="Pet Shop" style="max-width: 90%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 8: Pet Dentistry (Dental Scaling) -->
+                        <div class="service-tab-content" id="tab-dentistry">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="services__detail-content">
+                                        <h3 class="fw-bold mb-3 text-dark">Professional Dental Care for Healthy Teeth 
+</h3>
+                                        <p class="mb-20">Maintain your pet’s oral health with professional dental care focused on cleaning, prevention and treatment to ensure fresh breath and overall well-being.
+</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
+                                        <ul class="list-wrap service-detail-list">
+                                            <li><i class="fas fa-check-circle"></i> Dental scaling and cleaning procedures</li>
+                                            <li><i class="fas fa-check-circle"></i> Gum health evaluation and care</li>
+                                            <li><i class="fas fa-check-circle"></i> Plaque and tartar removal</li>
+                                            <li><i class="fas fa-check-circle"></i> Oral hygiene guidance for pets</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="services__detail-img text-center">
+                                        <img loading="lazy" src="assets/img/images/pet_dentistry.png" alt="Pet Dentistry" style="max-width: 90%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 9: Pet Inpatients -->
+                        <div class="service-tab-content" id="tab-inpatients">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="services__detail-content">
+                                        <h3 class="fw-bold mb-3 text-dark">24/7 Monitored Recovery Care</h3>
+                                        <p class="mb-20">Our inpatient care provides continuous monitoring and medical attention for pets requiring extended treatment, recovery or post-surgical supervision in a safe environment.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
+                                        <ul class="list-wrap service-detail-list">
+                                            <li><i class="fas fa-check-circle"></i> 24/7 supervised medical care</li>
+                                            <li><i class="fas fa-check-circle"></i> Post-surgical recovery support</li>
+                                            <li><i class="fas fa-check-circle"></i> Continuous health monitoring</li>
+                                            <li><i class="fas fa-check-circle"></i> Emergency stabilization and care</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="services__detail-img text-center">
+                                        <img loading="lazy" src="assets/img/images/pet_inpatients_img.png" alt="Pet Inpatients" style="max-width: 90%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tab 10: Pet Day Care -->
+                        <div class="service-tab-content" id="tab-daycare">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="services__detail-content">
+                                        <h3 class="fw-bold mb-3 text-dark">Safe Daytime Care with Comfort</h3>
+                                        <p class="mb-20">A safe and caring environment where pets receive attention, comfort and supervision during the day, ensuring stress-free care while owners are away.</p>
+                                        <h5 class="fw-bold text-dark mb-3">What We Cover</h5>
+                                        <ul class="list-wrap service-detail-list">
+                                            <li><i class="fas fa-check-circle"></i> Daytime supervision and care</li>
+                                            <li><i class="fas fa-check-circle"></i> Comfortable resting spaces</li>
+                                            <li><i class="fas fa-check-circle"></i> Feeding and basic care support</li>
+                                            <li><i class="fas fa-check-circle"></i> Social interaction and engagement</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="services__detail-img text-center">
+                                        <img loading="lazy" src="assets/img/images/pet_care_2.png" alt="Pet Day Care" style="max-width: 90%; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08);">
                                     </div>
                                 </div>
                             </div>
@@ -723,7 +891,7 @@ include 'header.php';
         const hash = window.location.hash;
         if (hash) {
             const cleanHash = hash.replace('#', '');
-            const validTabs = ['pet-care', 'vaccination', 'surgical', 'diagnostic', 'xray', 'spa', 'shop'];
+            const validTabs = ['pet-care', 'vaccination', 'surgical', 'diagnostic', 'xray', 'spa', 'shop', 'dentistry', 'inpatients', 'daycare'];
             if (validTabs.includes(cleanHash)) {
                 setTimeout(() => {
                     activateServiceTab(cleanHash);
@@ -740,7 +908,7 @@ include 'header.php';
         const hash = window.location.hash;
         if (hash) {
             const cleanHash = hash.replace('#', '');
-            const validTabs = ['pet-care', 'vaccination', 'surgical', 'diagnostic', 'xray', 'spa', 'shop'];
+            const validTabs = ['pet-care', 'vaccination', 'surgical', 'diagnostic', 'xray', 'spa', 'shop', 'dentistry', 'inpatients', 'daycare'];
             if (validTabs.includes(cleanHash)) {
                 activateServiceTab(cleanHash);
                 const target = document.getElementById('explore-services');

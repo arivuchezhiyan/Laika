@@ -61,18 +61,52 @@ include 'header.php';
     <section class="contact-info-area" style="padding: 80px 0;">
         <div class="container">
             <div class="row justify-content-center">
-                <!-- Location Card -->
-                <div class="col-lg-3 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="200">
+                <!-- Head Office Address Card -->
+                <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="200">
                     <div class="contact-info-item text-center p-4" style="background: #ffffff; border-radius: 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.05); height: 100%; border: 1px solid #ebebeb;">
                         <div class="icon mb-3" style="font-size: 35px; color: #ed1f31; display: inline-block; width: 70px; height: 70px; line-height: 70px; border-radius: 50%; background: #fdf2f3;">
                             <i class="fas fa-map-marker-alt"></i>
                         </div>
-                        <h4 class="title mb-2 fw-bold text-dark" style="font-size: 20px;">Our Address</h4>
-                        <p class="mb-0 text-muted" style="font-size: 15px;">VIT ROAD, Vellore - Chennai Rd, Old Katpadi, Vellore, Tamil Nadu 632014</p>
+                        <h4 class="title mb-2 fw-bold text-dark" style="font-size: 20px;">Head Office</h4>
+                        <p class="mb-0 text-muted" style="font-size: 15px;">
+                            KMJ Complex, VIT Road,<br>
+                            Old Katpadi - 632 007.<br>
+                            Ph: <a href="tel:+916369937762" style="color: inherit; text-decoration: none; font-weight: 500;">63699 37762</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Branch Office 1 Address Card -->
+                <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info-item text-center p-4" style="background: #ffffff; border-radius: 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.05); height: 100%; border: 1px solid #ebebeb;">
+                        <div class="icon mb-3" style="font-size: 35px; color: #ed1f31; display: inline-block; width: 70px; height: 70px; line-height: 70px; border-radius: 50%; background: #fdf2f3;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="title mb-2 fw-bold text-dark" style="font-size: 20px;">Branch Office</h4>
+                        <p class="mb-0 text-muted" style="font-size: 15px;">
+                            Om Sai Complex, Auxilium College,<br>
+                            Rountana, Gandhi Nagar,<br>
+                            Vellore - 632 007.<br>
+                            Ph: <a href="tel:+919087073504" style="color: inherit; text-decoration: none; font-weight: 500;">9087073504</a>
+                        </p>
+                    </div>
+                </div>
+                <!-- Branch Office 2 Address Card -->
+                <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-info-item text-center p-4" style="background: #ffffff; border-radius: 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.05); height: 100%; border: 1px solid #ebebeb;">
+                        <div class="icon mb-3" style="font-size: 35px; color: #ed1f31; display: inline-block; width: 70px; height: 70px; line-height: 70px; border-radius: 50%; background: #fdf2f3;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="title mb-2 fw-bold text-dark" style="font-size: 20px;">Branch Office</h4>
+                        <p class="mb-0 text-muted" style="font-size: 15px;">
+                            Greamspet, Besides Duramma Temple,<br>
+                            Opp to Union Bank, Vellore Road,<br>
+                            Chittoor, AP.<br>
+                            Ph: <a href="tel:+919384185171" style="color: inherit; text-decoration: none; font-weight: 500;">9384185171</a>
+                        </p>
                     </div>
                 </div>
                 <!-- Phone Card -->
-                <div class="col-lg-3 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="200">
                     <div class="contact-info-item text-center p-4" style="background: #ffffff; border-radius: 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.05); height: 100%; border: 1px solid #ebebeb;">
                         <div class="icon mb-3" style="font-size: 35px; color: #ed1f31; display: inline-block; width: 70px; height: 70px; line-height: 70px; border-radius: 50%; background: #fdf2f3;">
                             <i class="fas fa-phone-alt"></i>
@@ -85,7 +119,7 @@ include 'header.php';
                     </div>
                 </div>
                 <!-- Email Card -->
-                <div class="col-lg-3 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="400">
+                <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="300">
                     <div class="contact-info-item text-center p-4" style="background: #ffffff; border-radius: 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.05); height: 100%; border: 1px solid #ebebeb;">
                         <div class="icon mb-3" style="font-size: 35px; color: #ed1f31; display: inline-block; width: 70px; height: 70px; line-height: 70px; border-radius: 50%; background: #fdf2f3;">
                             <i class="fas fa-envelope"></i>
@@ -97,7 +131,7 @@ include 'header.php';
                     </div>
                 </div>
                 <!-- Hours Card -->
-                <div class="col-lg-3 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="500">
+                <div class="col-lg-4 col-md-6 mb-30" data-aos="fade-up" data-aos-delay="400">
                     <div class="contact-info-item text-center p-4" style="background: #ffffff; border-radius: 20px; box-shadow: 0px 10px 30px rgba(0,0,0,0.05); height: 100%; border: 1px solid #ebebeb;">
                         <div class="icon mb-3" style="font-size: 35px; color: #ed1f31; display: inline-block; width: 70px; height: 70px; line-height: 70px; border-radius: 50%; background: #fdf2f3;">
                             <i class="fas fa-clock"></i>

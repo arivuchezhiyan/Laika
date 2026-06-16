@@ -1,10 +1,24 @@
     <!-- footer-area -->
     <footer>
+        <style>
+        @media (min-width: 768px) {
+            .footer-right-align {
+                text-align: right !important;
+            }
+            .footer-right-align .footer__widget-title::before {
+                left: auto !important;
+                right: 0 !important;
+            }
+            .footer__top .row [class*=col-]:nth-child(3) .footer__widget {
+                margin-left: 0 !important;
+            }
+        }
+        </style>
         <div class="footer__area">
             <div class="footer__top fix">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
                             <div class="footer__widget">
                                 <div class="footer__logo">
                                     <a href="./"><img src="assets/img/logo/w_logo.png" alt="" loading="lazy"></a>
@@ -24,8 +38,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 d-none d-md-block">
-                            <div class="footer__widget">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 d-none d-md-block">
+                            <div class="footer__widget" style="margin-left: 40px;">
                                 <h4 class="footer__widget-title">Quick Links</h4>
                                 <div class="footer__link">
                                     <ul class="list-wrap">
@@ -40,14 +54,45 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 footer-right-align">
                             <div class="footer__widget">
                                 <h4 class="footer__widget-title">Contact Details</h4>
                                 <div class="footer__content">
-                                    <p>VIT ROAD, Vellore - Chennai Rd, Old Katpadi, Vellore, Tamil Nadu 632014, India</p>
-                                    <a href="tel:+919976415171" class="d-block">+919976415171</a>
-                                    <a href="tel:+919940919300" class="d-block">+919940919300</a>
-                                    <a href="mailto:info@likapet.in" class="d-block mt-10">info@likapet.in</a>
+                                    <div class="row text-start">
+                                        <div class="col-md-4 col-sm-6 mb-20">
+                                            <p class="mb-5" style="color: #ffffff;"><strong>HEAD OFFICE :</strong></p>
+                                            <p class="mb-0" style="font-size: 14px; line-height: 1.4;">
+                                                KMJ Complex, VIT Road,<br>
+                                                Old Katpadi - 632 007.<br>
+                                                Ph: <a href="tel:+916369937762" style="display: inline; font-weight: normal; color: inherit; text-decoration: underline;">63699 37762</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-6 mb-20">
+                                            <p class="mb-5" style="color: #ffffff;"><strong>BRANCH OFFICE :</strong></p>
+                                            <p class="mb-0" style="font-size: 14px; line-height: 1.4;">
+                                                Om Sai Complex, Auxilium College,<br>
+                                                Rountana, Gandhi Nagar,<br>
+                                                Vellore - 632 007.<br>
+                                                Ph: <a href="tel:+919087073504" style="display: inline; font-weight: normal; color: inherit; text-decoration: underline;">9087073504</a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 mb-20">
+                                            <p class="mb-5" style="color: #ffffff;"><strong>BRANCH OFFICE :</strong></p>
+                                            <p class="mb-0" style="font-size: 14px; line-height: 1.4;">
+                                                Greamspet, Besides Duramma Temple,<br>
+                                                Opp to Union Bank, Vellore Road,<br>
+                                                Chittoor, AP.<br>
+                                                Ph: <a href="tel:+919384185171" style="display: inline; font-weight: normal; color: inherit; text-decoration: underline;">9384185171</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-15 pt-15" style="border-top: 1px solid rgba(255, 255, 255, 0.15);">
+                                        <div class="col-12 text-md-end text-center">
+                                            <a href="tel:+919976415171" class="d-inline-block mt-0 mb-0 mr-15" style="margin-right: 20px; margin-bottom: 0; color: #ffffff; font-weight: bold;">Ph: +919976415171</a>
+                                            <a href="tel:+919940919300" class="d-inline-block mt-0 mb-0 mr-15" style="margin-right: 20px; margin-bottom: 0; color: #ffffff; font-weight: bold;">+919940919300</a>
+                                            <a href="mailto:info@likapet.in" class="d-inline-block mt-0 mb-0" style="margin-bottom: 0; color: #ffffff; font-weight: bold; text-decoration: underline;">info@likapet.in</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

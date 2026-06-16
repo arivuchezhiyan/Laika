@@ -2047,6 +2047,10 @@ textarea {
   justify-content: center;
 }
 
+.tgmenu__action ul .header-search a:hover {
+  color: var(--tg-theme-primary);
+}
+
 .tgmenu__action ul .header-cart a:hover {
   color: var(--tg-theme-primary);
 }
@@ -13686,7 +13690,7 @@ blockquote p {
 }
 
 .footer__content a:hover {
-  color: var(--tg-theme-primary);
+  color: #ffc107;
 }
 
 .footer__content-two {
@@ -13721,7 +13725,7 @@ blockquote p {
 }
 
 .footer__social .list-wrap li a:hover {
-  color: var(--tg-theme-primary);
+  color: #ffc107;;
 }
 
 .footer__social-two {
@@ -13807,7 +13811,7 @@ blockquote p {
 }
 
 .footer__link .list-wrap li a:hover {
-  color: var(--tg-color-white-default);
+  color: #ffc107;;
 }
 
 .footer__link .list-wrap li a:hover::before {

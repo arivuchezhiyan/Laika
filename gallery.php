@@ -45,6 +45,16 @@ for ($i = 1; $i <= 29; $i++) {
 
 <!-- main-area -->
 <main class="fix">
+    <style>
+    .breadcrumb__area {
+        background-image: url('assets/img/banner/pet banner 2.png') !important;
+    }
+    @media (min-width: 768px) {
+        .breadcrumb__area {
+            background-image: url('assets/img/banner/pet banner 2.png') !important;
+        }
+    }
+    </style>
 
     <!-- breadcrumb-area -->
     <section class="breadcrumb__area">

@@ -8,7 +8,7 @@ RewriteEngine On
 # RewriteRule ^ /%1 [R=301,L]
 
 # Existing Blog Rule
-RewriteRule ^blogs/([a-zA-Z0-9-]+)$ blog-single.php?slug=$1 [L,QSA]
+RewriteRule ^blog/([a-zA-Z0-9-]+)$ blog-details.php?slug=$1 [L,QSA]
 
 
 # Handle pages without .php extension (Internal Rewrite)
