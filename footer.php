@@ -1,14 +1,15 @@
     <!-- footer-area -->
     <footer>
         <style>
+        .footer-contact-title {
+            text-align: center !important;
+        }
+        .footer-contact-title::before {
+            left: 50% !important;
+            right: auto !important;
+            transform: translateX(-50%) !important;
+        }
         @media (min-width: 768px) {
-            .footer-right-align {
-                text-align: right !important;
-            }
-            .footer-right-align .footer__widget-title::before {
-                left: auto !important;
-                right: 0 !important;
-            }
             .footer__top .row [class*=col-]:nth-child(3) .footer__widget {
                 margin-left: 0 !important;
             }
@@ -54,9 +55,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 footer-right-align">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="footer__widget">
-                                <h4 class="footer__widget-title">Contact Details</h4>
+                                <h4 class="footer__widget-title footer-contact-title">Contact Details</h4>
                                 <div class="footer__content">
                                     <div class="row text-start">
                                         <div class="col-md-4 col-sm-6 mb-20">
@@ -87,7 +88,7 @@
                                         </div>
                                     </div>
                                     <div class="row mt-15 pt-15" style="border-top: 1px solid rgba(255, 255, 255, 0.15);">
-                                        <div class="col-12 text-md-end text-center">
+                                        <div class="col-12 text-center">
                                             <a href="tel:+919976415171" class="d-inline-block mt-0 mb-0 mr-15" style="margin-right: 20px; margin-bottom: 0; color: #ffffff; font-weight: bold;">Ph: +919976415171</a>
                                             <a href="tel:+919940919300" class="d-inline-block mt-0 mb-0 mr-15" style="margin-right: 20px; margin-bottom: 0; color: #ffffff; font-weight: bold;">+919940919300</a>
                                             <a href="mailto:info@likapet.in" class="d-inline-block mt-0 mb-0" style="margin-bottom: 0; color: #ffffff; font-weight: bold; text-decoration: underline;">info@likapet.in</a>
